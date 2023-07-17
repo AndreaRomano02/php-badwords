@@ -17,17 +17,21 @@ $censored_string_length = strlen($censored_string)
 </head>
 
 <body>
-  <p>La frase che hai inserito è
-  <p> '<strong><?= $string ?></strong>'</p>
-  <p> <?= $string_length ?></p>
-  </p>
-  <p>La parola da censurare è
-  <p>'<strong><?= $censored_word ?></strong>'</p>
-  </p>
-  <p>La frase censurata è
-  <p>'<strong><?= $censored_string ?></strong>'</p>
-  <p> <?= $censored_string_length ?></p>
-  </p>
+  <div>
+
+    <h3>La frase che hai inserito è</h3>
+    <p> '<strong><?= $string ?></strong>'</p>
+    <p>La lungezza della frase è di: <?= $string_length ?> lettere</p>
+  </div>
+  <div>
+    <h3>La parola da censurare è</h3>
+    <p>'<strong><?= $censored_word ?></strong>'</p>
+  </div>
+  <div>
+    <h3>La frase censurata è</h3>
+    <p>'<strong><?= $censored_string ?></strong>'</p>
+    <p>La lungezza della frase è di: <?= $censored_string_length ?> lettere</p>
+  </div>
 </body>
 
 </html>
